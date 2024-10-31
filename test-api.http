@@ -1,0 +1,50 @@
+# GET root URL
+GET http://localhost:8000/
+Accept: text/plain
+
+###
+
+# GET health check
+GET http://localhost:8000/health
+Accept: application/json
+
+###
+
+# GET all students
+GET http://localhost:8000/students
+Accept: application/json
+
+###
+
+# GET a specific student by ID
+GET http://localhost:8000/students/1
+Accept: application/json
+
+###
+
+# POST create a new student
+POST http://localhost:8000/students
+Content-Type: application/json
+
+{
+  "name": "Charlie",
+  "grade": "B",
+  "email": "charlie@example.com"
+}
+
+###
+
+# PUT update a student by ID
+PUT http://localhost:8000/students/1
+Content-Type: application/json
+
+{
+  "name": "Alice Updated",
+  "grade": "A",
+  "email": "alice.updated@example.com"
+}
+
+###
+
+# DELETE a student by ID
+DELETE http://localhost:8000/students/1
