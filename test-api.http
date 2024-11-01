@@ -17,7 +17,7 @@ Accept: application/json
 ###
 
 # GET a specific student by ID
-GET http://localhost:8000/students/1
+GET http://localhost:8000/students/2
 Accept: application/json
 
 ###
@@ -27,24 +27,24 @@ POST http://localhost:8000/students
 Content-Type: application/json
 
 {
-  "name": "Charlie",
+  "name": "steff",
   "grade": "B",
-  "email": "charlie@example.com"
+  "email": "steff@example.com"
 }
 
 ###
 
 # PUT update a student by ID
-PUT http://localhost:8000/students/1
+PUT http://localhost:8000/students/2
 Content-Type: application/json
 
 {
-  "name": "Alice Updated",
+  "name": "steff updated",
   "grade": "A",
-  "email": "alice.updated@example.com"
+  "email": "steff.updated@example.com"
 }
 
 ###
 
 # DELETE a student by ID
-DELETE http://localhost:8000/students/1
+DELETE http://localhost:8000/students/3
